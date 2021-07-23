@@ -85,4 +85,10 @@ public class Worker {
 	public void removerComtract(HourContract contract) {
 		this.contracts.remove(contract);
 	}
+
+	@Override
+	public String toString() {
+		return "Worker [name=" + name + ", level=" + level + ", baseSalary=" + baseSalary + ", department=" + department
+				+ ", contracts=" + contracts + "]";
+	}
 }
